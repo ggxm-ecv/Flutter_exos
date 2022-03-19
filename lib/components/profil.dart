@@ -25,7 +25,7 @@ class ProfileView extends StatelessWidget {
               const SizedBox(height: 32),
               Container(
                 width: 340,
-                height: 400,
+                height: 340,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(44),
@@ -98,30 +98,42 @@ class ProfileView extends StatelessWidget {
                     ),
                     Table(
                       columnWidths: const <int, TableColumnWidth>{
-                        0: FixedColumnWidth(60),
+                        0: FixedColumnWidth(80),
                         1: FlexColumnWidth()
                       },
                       children: const [
                         TableRow(
                           children: [
-                            Icon(Icons.domain),
-                            Text(
-                              'Studio Zerance',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                              child: Icon(Icons.domain, size: 26),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                              child: Text(
+                                'Studio Zerance',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
+                                ),
                               ),
                             )
                           ]
                         ),
                         TableRow(
                           children: [
-                            Icon(Icons.work_outline),
-                            Text(
-                              'Developpeur Front Shopify',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                              child: Icon(Icons.work_outline, size: 26),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                              child: Text(
+                                'Developpeur Front Shopify',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16
+                                ),
                               ),
                             )
                           ]
